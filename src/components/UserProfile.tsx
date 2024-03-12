@@ -17,7 +17,7 @@ const UserProfile: React.FC<UserProfileProps> = ({ user }) => {
       <div className="flex items-center mb-4">
         <img src={user.profilePictureUrl} alt={user.username} className="w-12 h-12 rounded-full mr-4" />
         <div>
-          <h2 className="text-xl font-bold">{user.username}</h2>
+              <h2 className="text-xl font-bold">{user.username}</h2>
           <p className="text-gray-500">{user.bio}</p>
         </div>
       </div>

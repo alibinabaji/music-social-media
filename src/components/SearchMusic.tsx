@@ -2,7 +2,7 @@ import React from 'react';
 
 const SearchForm: React.FC = () => {
   return (
-    <div className="bg-gray-200 p-4 rounded-lg flex items-center m-4">
+    <div className="bg-gray-200 p-4 rounded-lg flex items-center my-4">
       <input
         type="text"
         placeholder="Search music"
