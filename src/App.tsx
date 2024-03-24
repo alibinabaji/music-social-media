@@ -6,11 +6,14 @@ import Home from "./pages/Home";
 import Explore from "./pages/Explore";
 import PlaylistDetail from "./pages/PlaylistDetail";
 import NotFound from "./pages/NotFound";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App: React.FC = () => {
   return (
     <Router>
       <div className="flex flex-col min-h-screen max-w-md m-auto">
+        <ToastContainer />
         <Header />
         <main className="flex-grow p-4">
           <Routes>

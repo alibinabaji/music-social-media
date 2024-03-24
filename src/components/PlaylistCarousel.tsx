@@ -5,10 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import PlaylistCard from "./PlaylistCard";
 
 interface Playlist {
-  id: number;
+  playlist_id: number;
   name: string;
   description: string;
-  coverUrl: string;
 }
 
 interface PlaylistCarouselProps {
@@ -29,7 +28,7 @@ const PlaylistCarousel: React.FC<PlaylistCarouselProps> = ({ playlists }) => {
     <div>
       <Slider {...settings}>
         {playlists.map((playlist) => (
-          <div key={playlist.id}>
+          <div key={playlist.playlist_id}>
             <PlaylistCard playlist={playlist} />
           </div>
         ))}
